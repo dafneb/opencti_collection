@@ -1,5 +1,7 @@
-import requests
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
+import requests
 
 class ConnectorClient:
     def __init__(self, helper, config):
