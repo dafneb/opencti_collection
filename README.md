@@ -2,5 +2,10 @@
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](https://github.com/dafneb/.github/blob/main/.github/CODE_OF_CONDUCT.md) 
 [![License](https://img.shields.io/badge/License-MIT-4baaaa.svg)](https://github.com/dafneb/.github/blob/main/LICENSE)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/dafneb/opencti_collection)
+![GitHub contributors](https://img.shields.io/github/contributors/dafneb/opencti_collection)
 
-Usefull tools, scripts and connectors for OpenCTI
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/dafneb/opencti_collection/snyk-code-scan.yml?label=snyk-code)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/dafneb/opencti_collection/snyk-container-scan.yml?label=snyk-container)
+
+Useful tools, scripts and connectors for OpenCTI
