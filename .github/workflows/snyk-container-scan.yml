@@ -1,4 +1,4 @@
-name: Snyk Code Scan
+name: Snyk Container Scan
 
 # Controls when the workflow will run
 on:
@@ -27,10 +27,14 @@ permissions:
 
 jobs:
   security:
-    name: Snyk Code Scan
+    name: Snyk Container Scan
     permissions:
       actions: read
       contents: read
       security-events: write
-    uses: dafneb/.github/.github/workflows/snyk-code-scan-python.yml@main
+    # uses: dafneb/.github/.github/workflows/snyk-container-scan.yml@main
+    uses: dafneb/.github/.github/workflows/snyk-container-scan.yml@feature/snyk-container-scan
+    with:
+      working_directory: "./connectors/external-import/azure"
+      image_name: "dafneb/connector-azure-inventory"
     secrets: inherit
