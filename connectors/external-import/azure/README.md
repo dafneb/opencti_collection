@@ -154,3 +154,4 @@ Any additional information about this connector
 * What should the user take into account when using this connector
 * ...
 -->
+Connector is derivated from [Template](https://github.com/OpenCTI-Platform/connectors/tree/master/templates/external-import)
