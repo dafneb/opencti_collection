@@ -13,12 +13,15 @@ on:
       - 'main'
 
 # Declare default permissions as read only.
-permissions: read-all
+permissions:
+  contents: read
 
 jobs:
   scorecard:
     permissions:
+      actions: read
+      contents: read
       security-events: write
       id-token: write
-    uses: dafneb/.github/.github/workflows/scorecard.yml@08d8a297cb925299163017a35dfc8490157cdd90
+    uses: dafneb/.github/.github/workflows/scorecard.yml@ad3e2b8ac3d3ea759a88bb8a0e507991f5c7ba9a
     secrets: inherit
