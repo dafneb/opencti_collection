@@ -9,7 +9,8 @@ on:
   schedule:
     - cron: '35 23 * * 5'
   push:
-    branches: [ "main" ]
+    branches:
+      - 'main'
 
 # Declare default permissions as read only.
 permissions: read-all
@@ -19,5 +20,5 @@ jobs:
     permissions:
       security-events: write
       id-token: write
-    uses: dafneb/.github/.github/workflows/scorecard.yml@main
+    uses: dafneb/.github/.github/workflows/scorecard.yml@677aa2e2b4f8e7e0af14f0546ffded8978a360fd
     secrets: inherit
