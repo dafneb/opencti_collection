@@ -17,10 +17,28 @@ updates:
     - "github-actions"
 # Enable version updates for Docker
 - package-ecosystem: "docker"
-  directory: "/"
+  directories:
+    - "/connectors/external-import/azure/"
   schedule:
     interval: "daily"
     time: "16:00"
+  groups:
+    all-actions:
+      patterns: [ "*" ]
   labels:
     - "dependencies"
     - "docker"
+# Enable version updates for pip ecosystem
+- package-ecosystem: "pip"
+  directories:
+    - "/connectors/external-import/azure/src"
+  schedule:
+    interval: "daily"
+    time: "16:00"
+  groups:
+    all-actions:
+      patterns: [ "*" ]
+  labels:
+    - "dependencies"
+    - "python"
+   
