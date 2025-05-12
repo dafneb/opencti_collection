@@ -6,5 +6,6 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/dafneb/opencti_collection)
 
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/dafneb/opencti_collection/snyk-container-scan.yml?label=snyk-container)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/dafneb/opencti_collection/badge)](https://scorecard.dev/viewer/?uri=github.com/dafneb/opencti_collection)
 
 Useful tools, scripts and connectors for OpenCTI
