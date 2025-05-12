@@ -20,5 +20,5 @@ jobs:
     permissions:
       security-events: write
       id-token: write
-    uses: dafneb/.github/.github/workflows/scorecard.yml@677aa2e2b4f8e7e0af14f0546ffded8978a360fd
+    uses: dafneb/.github/.github/workflows/scorecard.yml@08d8a297cb925299163017a35dfc8490157cdd90
     secrets: inherit
