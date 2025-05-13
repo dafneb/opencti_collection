@@ -11,7 +11,7 @@ RUN apk update && apk upgrade && \
     apk --no-cache add git build-base libmagic libffi-dev libxml2-dev libxslt-dev
 
 RUN cd /opt/opencti-connector-azure && \
-    pip3 install --no-cache-dir --require-hashes -r requirements.txt && \
+    pip3 install --no-cache-dir -r requirements.txt && \
     apk del git build-base
 
 # Expose and entrypoint
