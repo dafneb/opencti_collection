@@ -1,4 +1,5 @@
-FROM python:3.13-alpine
+# syntax=docker/dockerfile:1
+FROM python:3.13-alpine@sha256:452682e4648deafe431ad2f2391d726d7c52f0ff291be8bd4074b10379bb89ff
 ENV CONNECTOR_TYPE=EXTERNAL_IMPORT
 
 # Copy the connector
