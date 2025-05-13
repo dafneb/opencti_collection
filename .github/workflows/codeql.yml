@@ -34,6 +34,10 @@ on:
   schedule:
     - cron: '25 22 * * 3'
 
+# Assign permissions for the workflow      
+permissions:
+  contents: read
+  
 jobs:
   analyze:
     name: Analyze (${{ matrix.language }})
@@ -46,10 +50,8 @@ jobs:
     permissions:
       # required for all workflows
       security-events: write
-
       # required to fetch internal or private CodeQL packs
       packages: read
-
       # only required for workflows in private repositories
       actions: read
       contents: read
