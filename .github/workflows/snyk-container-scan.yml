@@ -31,7 +31,7 @@ jobs:
       actions: read
       contents: read
       security-events: write
-    uses: dafneb/.github/.github/workflows/snyk-container-scan.yml@902a99fd805393744d6d7a8018045a108f3ce7a2
+    uses: dafneb/.github/.github/workflows/snyk-container-scan.yml@2447bb5e1b5f31b2c534e3590cdc543a93576db2
     with:
       working_directory: "./connectors/external-import/azure"
       image_name: "dafneb/connector-azure-inventory"
